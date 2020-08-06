@@ -22,11 +22,9 @@ class CircleTransitionPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     if (transitionPercent < 0.5) {
       final double expansionPercent = transitionPercent / 0.5;
-      print("Expansion Percent: $expansionPercent");
       paintExpansion(canvas, size, expansionPercent);
     } else {
       final double contractionPercent = (transitionPercent - .5) / 0.5;
-      print("Contraction Percent: $contractionPercent");
       paintContraction(canvas, size, contractionPercent);
     }
   }
