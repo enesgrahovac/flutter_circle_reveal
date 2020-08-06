@@ -157,10 +157,6 @@ class _MyHomePageState extends State<MyHomePage>
     final contentOffset = offsetPercent * maxOffset;
     final double contentScale = 0.6 + (0.4 * (1.0 - offsetPercent.abs()));
 
-    print("CURENT PAGE: $currentPageIndex");
-    print("Second: $secondPageIndex");
-    print("Third: $thirdPageIndex");
-    // currentPage = pages[currentPageIndex];
     backgroundColor = colors[currentPageIndex];
     currentCircleColor = colors[secondPageIndex];
     nextCircleColor = colors[thirdPageIndex];
